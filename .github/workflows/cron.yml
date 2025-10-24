@@ -1,0 +1,22 @@
+name: Run
+
+on:
+  schedule:
+    - cron: '0 9 * * *' # Every day at 10 AM Rome time (9 AM UTC)
+
+jobs:
+  run_application:
+    runs-on: ubuntu-latest
+    container: golang:latest
+    env:
+      SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
+      SHEET_ID: ${{ secrets.SHEET_ID }}
+      SHEET_NAME: ${{ secrets.SHEET_NAME }}
+      GMAIL_SENDER: ${{ secrets.GMAIL_SENDER }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      SEND_AS: ${{ secrets.SEND_AS }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run built application
+        run: go run .
