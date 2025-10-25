@@ -76,6 +76,7 @@ func main() {
 	}
 	ok_count, err_count := 0, 0
 	for _, pp := range people {
+		utils.Format(&pp)
 		age, err := pp.Age()
 		if err != nil {
 			err_count++

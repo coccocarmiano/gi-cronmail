@@ -35,7 +35,7 @@ func (mf MailFormatter) String(to models.Person, params map[string]string) (stri
 	return "Content-Type: text/html\r\n" +
 		fmt.Sprintf("From: %s\r\n", mf.mail.SendAs) +
 		fmt.Sprintf("Reply-To: %q <%s>\r\n", mf.mail.SendAs, mf.mail.ReplyTo) +
-		fmt.Sprintf("Subject: %s\r\n", mf.mail.Title) +
+		fmt.Sprintf("Subject: Tanti auguri, %s\r\n", to.FirstName) +
 		fmt.Sprintf("To: %q <%s>\r\n", to.FirstName, to.Mail) +
 		"\r\n" +
 		buf.String(), nil

@@ -12,20 +12,23 @@ func FormatRange(sheet string, rng string) string {
 }
 
 func Capitalize(s string) string {
-	s = strings.Trim(s, " ")
-	ss := strings.Split(s, " ")
-	capitalized := make([]string, len(ss), 0)
-	for idx, word := range ss {
-		if len(word) < 1 {
-			continue
-		}
-
-		runes := []rune(word)
-		runes[0] = unicode.ToUpper(runes[0])
-		capitalized[idx] = string(runes)
+	if len(s) < 1 {
+		return s
 	}
 
-	return strings.Join(capitalized, " ")
+	bts := []rune(strings.ToLower(s))
+	bts[0] = unicode.ToUpper(bts[0])
+	for i := 1; i < len(bts); i++ {
+		if !unicode.IsLetter(bts[i]) && bts[i] != ' ' {
+			bts[i-1] = unicode.ToUpper(bts[i-1])
+		}
+
+		if unicode.IsSpace(bts[i-1]) {
+			bts[i] = unicode.ToUpper(bts[i])
+		}
+	}
+
+	return string(bts)
 }
 
 func Format(p *models.Person) *models.Person {
