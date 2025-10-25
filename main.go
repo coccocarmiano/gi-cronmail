@@ -92,7 +92,7 @@ func main() {
 		}
 
 		logrus.Debug("Sending mail to ", pp.Mail)
-		// err = client.Send(pp.Mail, body)
+		err = client.Send(pp.Mail, body)
 		if err != nil {
 			err_count++
 			continue
