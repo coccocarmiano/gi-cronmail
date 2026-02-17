@@ -1,37 +1,78 @@
-<!DOCTYPE html>
-<html lang="it">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>Buon Compleanno</title>
+    <!--[if mso]>
+    <style type="text/css">
+        body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+    </style>
+    <![endif]-->
 </head>
 
-<body>
-    <table class="text-m" style="width: 100%;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 1rem;">
-        <tr style="width: 100%;">
-            <td class="space" style="width: 10%;content: ''"></td>
-            <td class="content" style="width: 80%;text-align: center;">
-                <p class="text-xl" style="font-size: 2rem;">
-                    <b style="color: #dc2626;">
-                        Tanti Auguri, {{.Nome}}!
-                    </b>
-                </p>
-                <img width="150" src="https://i.imgur.com/6xOzJrh.png" alt="">
-                <p>
-                    Ciao {{.Nome}}
-                </p>
-                <p>Questa email è solo per augurarti un felice compleanno per i tuoi {{.Age}} anni.</p>
-                <p>Speriamo tu abbia modo di trascorrerlo con le persone che ami.
-                </p>
-                <p>
-                    Se avanzasse un po' di torta, puoi sempre venire a trovarci al Centro Sociale, non ci arrabbiamo
-                    mica eh! 🍰🍰🍰
-                </p>
+<body style="margin: 0; padding: 0; background-color: #f5f5f5; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+    <!-- Wrapper table for background color -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f5f5;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <!-- Main container table - max width 600px for optimal display -->
+                <table border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px; width: 100%; background-color: #ffffff;">
+                    <!-- Content row -->
+                    <tr>
+                        <td align="center" style="padding: 40px 20px; font-family: Verdana, Geneva, Tahoma, Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333333;">
+                            <!-- Title -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <tr>
+                                    <td align="center" style="padding-bottom: 30px;">
+                                        <h1 style="margin: 0; padding: 0; font-size: 32px; font-weight: bold; color: #dc2626; font-family: Verdana, Geneva, Tahoma, Arial, sans-serif; line-height: 1.2;">
+                                            Tanti Auguri, {{.Nome}}!
+                                        </h1>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Image -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <tr>
+                                    <td align="center" style="padding-bottom: 30px;">
+                                        <img src="https://i.imgur.com/WcPBBhj.png" alt="Buon Compleanno" width="150" style="display: block; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 150px; height: auto;" />
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Content paragraphs -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <tr>
+                                    <td style="padding-bottom: 16px; font-family: Verdana, Geneva, Tahoma, Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333333; text-align: center;">
+                                        Ciao {{.Nome}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 16px; font-family: Verdana, Geneva, Tahoma, Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333333; text-align: center;">
+                                        Questa email è solo per augurarti un felice compleanno per i tuoi {{.Age}} anni.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 16px; font-family: Verdana, Geneva, Tahoma, Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333333; text-align: center;">
+                                        Speriamo tu abbia modo di trascorrerlo con le persone che ami.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 0; font-family: Verdana, Geneva, Tahoma, Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333333; text-align: center;">
+                                        Se avanzasse un po' di torta, puoi sempre venire a trovarci al Centro Sociale, non ci arrabbiamo mica eh! &#127856;&#127856;&#127856;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
             </td>
-            <td class="space" style="width: 10%;content: ' ;': ;"></td>
         </tr>
     </table>
 </body>
